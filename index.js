@@ -9,7 +9,7 @@ const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1395760129328283650/WU
 app.post('/send-log', async (req, res) => {
   const { players } = req.body;
   
-  if (!username || !userId) return res.status(400).send("Missing data");
+  if (!players) return res.status(400).send("Missing data");
 
   const user1 = players[0].username
   const user2 = players[1].username
