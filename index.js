@@ -6,8 +6,6 @@ app.use(express.json());
 
 const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/your-webhook-url";
 
-app.get('/', (req, res) => res.send("Server is alive!"));
-
 app.post('/send-log', async (req, res) => {
   const { username, userId } = req.body;
   if (!username || !userId) return res.status(400).send("Missing data");
