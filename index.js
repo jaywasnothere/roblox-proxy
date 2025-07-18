@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/your-webhook-url";
+const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1395760129328283650/WUXgotpYa37wYv42RCZu5-Ef8kMm3i4fLQ8Y01lrVbaengu1HUC9yFr96Asy2uP7mxKz";
 
 app.post('/send-log', async (req, res) => {
   const { username, userId } = req.body;
